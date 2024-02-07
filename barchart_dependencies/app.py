@@ -22,6 +22,20 @@ cleaned_data = pd.read_csv(cleaned_data_path)
 # Save cleaned data to the database
 cleaned_data.to_sql('cleaned_data', engine, index=False, if_exists='replace')
 
+# Define a route to print data from the whole world
+@app.route('/print_sample_data_all')
+def print_sample_data_all():
+    try:
+        # Convert data to JSON format
+        cleaned_data_all_json = cleaned_data.to_json(orient='records')
+
+        # Return a JSON response
+        return jsonify({'cleaned_data_all': cleaned_data_all_json})
+    except Exception as e:
+        # Print the exception for debugging
+        print(f"Error in print_sample_data_all route: {str(e)}")
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
 # Define a route to print sample data from the cleaned data for United Kingdom
 @app.route('/print_sample_data_uk')
 def print_sample_data_uk():
