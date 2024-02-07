@@ -63,6 +63,16 @@ anychart.onDocumentReady(function () {
             // Apply color scale to the series
             series.colorScale(ocs);
 
+            // Set legend
+            chart.colorRange().enabled(true);
+
+            // Improve tooltip
+            series.tooltip()
+            .useHtml(true)
+            .format(function (d) {
+                return ("<h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'> Jobs added:" + d.value + "</h6>");
+            });
+
             // Set the container id
             chart.container('mapContainer');
 
