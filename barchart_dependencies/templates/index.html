@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analyst Jobs Dashboard</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/static/logic.js"></script>
+    <script src="/static/js/logic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 
@@ -18,25 +18,26 @@
 
     <!-- Modern Year Selection Dropdown -->
     <div class="year-dropdown-container">
-        <label for="yearSelection">Select Year:</label>
+        <label for="yearSelection"><strong>Select year :</strong></label>
         <div class="custom-dropdown">
             <select id="yearSelection"></select>
             <span class="arrow"></span>
         </div>
     </div>
 
-    <!-- Add a button for switching between job title and experience level -->
+    <!-- Add buttons for switching between job category, experience level, and job title -->
     <div class="switch-buttons">
-        <button id="jobTitleBtn" class="active">Job Title</button>
+        <button id="jobCategoryBtn" class="active">Job Category</button>
         <button id="experienceLevelBtn">Experience Level</button>
+        <button id="jobTitleBtn">Job Title</button>
     </div>
 
     <!-- Canvas for Chart -->
-    <canvas id="worldDataChart" width="1200" height="600"></canvas>
+    <canvas id="DataJobChart" width="1200" height="600"></canvas>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Data Analyst Jobs Dashboard @ JSONlabs</p>
+        <p>&copy; 2024 DataInsight Lab</p>
     </footer>
 </body>
 
