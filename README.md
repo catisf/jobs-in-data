@@ -51,7 +51,7 @@ We used a publicly available dataset. The dataset contains no personal informati
 Data was sourced from the following dataset on kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
 
 ## 7. Code source
-Part our code were adapted from the documentation of the libraries used, such as:
+Parts of our code were adapted from the documentation of the libraries used, such as:
 - [AnyChart documentation](https://docs.anychart.com/Maps/Choropleth_Map)
 
 ## 8. Authors
