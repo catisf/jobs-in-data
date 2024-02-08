@@ -84,6 +84,19 @@ anychart.onDocumentReady(function () {
             // Set legend
             chart.colorRange().enabled(true);
 
+            let colorRangeLegend = chart.legend();
+            colorRangeLegend.enabled(true);
+            colorRangeLegend.title("Number of data-related jobs advertised between 2020-2023");
+            colorRangeLegend.position("bottom");
+            colorRangeLegend.align("center");
+            colorRangeLegend.title().fontSize(14); 
+            colorRangeLegend.padding([10, 0, 0, 0]); // Top, Right, Bottom, Left
+
+            // Disable legend items for the main series
+            chart.legend().itemsFormatter(function() {
+                return null;
+            });
+            
             // Improve tooltip
             series.tooltip()
             .useHtml(true)
@@ -97,8 +110,6 @@ anychart.onDocumentReady(function () {
                 salaryUSD.toLocaleString('en-US', { maximumFractionDigits: 0 }) + "<br>Average salary (GBP): £" + salaryGBP.toLocaleString('en-US', { maximumFractionDigits: 0 }));
             });
 
-            // Set map title
-            chart.title("Number of data-related jobs advertised between 2020-2023")
             // Set the container id
             chart.container('mapContainer');
 
