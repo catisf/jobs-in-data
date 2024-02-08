@@ -14,8 +14,21 @@ header {
     padding: 10px;
 }
 
-p {
-    font-size: 22px;
+.first-question-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;    
+}
+
+.question-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;    
 }
 
 .map-container {
