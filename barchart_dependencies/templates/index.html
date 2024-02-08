@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/js/logic.js"></script>
+    <script src="/static/js/piechart_logic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 
@@ -35,6 +36,31 @@
     <!-- Canvas for Chart -->
     <canvas id="DataJobChart" width="1200" height="600"></canvas>
 
+    <div class="year-dropdown-container">
+        <label for="yearSelect"><strong>Select year:</strong></label>
+        <div class="custom-dropdown">
+            <select id="yearSelect">
+                <option value="all">All Years</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+    
+       <!-- Buttons for Company Size and Work Setting -->
+       <div class="switch-buttons">
+        <button id="companySizeBtn">UK Company Size-Entry Level</button>
+        <button id="workSettingBtn">UK Work Setting-Entry Level</button>
+    </div>
+    
+    </div>
+    
+        <!-- Canvas for Pie Chart -->
+        <canvas id="pieChart" width="1200"0 height="600"></canvas>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 DataInsight Lab</p>

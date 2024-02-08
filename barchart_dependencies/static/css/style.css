@@ -111,3 +111,135 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.switch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.switch-buttons button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.switch-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.switch-buttons button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.year-dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.year-dropdown-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.custom-dropdown, .data-selector {
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+select:hover {
+    border-color: #2980b9;
+}
+
+select:focus {
+    border-color: #4CAF50;
+}
+
+span.arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #333 transparent transparent transparent;
+    pointer-events: none;
+}
+
+
+.switch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.switch-buttons button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.switch-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.switch-buttons button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+#pieChart {
+    margin: 20px auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    max-width: 600px; 
+    
+}
