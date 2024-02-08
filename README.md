@@ -8,14 +8,14 @@
 
 
 ## Contents:
-1. Overview
-2. Deployment
-3. Project development stages
-4. Set up and execution
-5. Ethical considerations
-6. Data source
-7. Code source
-8. Authors
+1. [Overview](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#1-overview)
+2. [Deployment](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#2-deployment)
+3. [Project development stages](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#3-project-development-stages)
+4. [Set up and execution](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#4-set-up-and-execution)
+5. [Ethical considerations](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#5-ethical-considerations)
+6. [Data source](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#6-data-source)
+7. [Code source](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#7-code-source)
+8. [Authors](https://github.com/catisf/jobs-in-data/blob/catisf/map/README.md#8-authors)
 
 ## 1. Overview
 > "Employer demand for specialist data skills is growing across a wide range of industries"
