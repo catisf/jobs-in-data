@@ -2,7 +2,7 @@
 ## Job and salary trends in data-related careers (2020-2023)
 
 <p align="center">
-  <img src = "https://github.com/catisf/jobs-in-data/blob/main/images/app_flowchart.png" height = "75%" width = "75%">
+  <img src = "https://github.com/catisf/jobs-in-data/blob/main/images/dashboard.png" height = "75%" width = "75%">
 </p>
 <h6 align="center">Fig. 1 - Interactive dashboard</h6>
 
