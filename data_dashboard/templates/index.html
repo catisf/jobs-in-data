@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Jobs Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- files for map -->
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-map.min.js" type="text/javascript"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/geodata/custom/world/world.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js" type="text/javascript"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-data-adapter.min.js"></script>
+   
+    <!-- js code -->
+    <script src="/static/js/barchart_logic.js"></script>
+    <script src="/static/js/map_logic.js"></script>
+    <script src="/static/js/piechart_logic.js"></script>
+    <script src="/static/js/linechart_logic.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>So you want to be a data analyst?</h1p><h2>Job and salary trends in data-related careers (2020-2023)</h2></p>
+    </header>
+
+    <!-- <div class="project-description">
+        <p align="center"> As we approach the end of our Data Analytics Bootcamp, a lot of us will be aiming to find a new job. <br>
+            With this in mind, in this project, we look at current trends in data-related jobs, offering valuable insight to inform our impending job searches.</p>
+    </div>
+
+    <div class="map-container" id="mapContainer"></div>   -->
+
+    <div class="first-question-banner">
+        <h3 id="question1">
+            1. What countries offer more job opportunities?  
+        </h3>
+    </div>
+
+    <div class="map-container" id="mapContainer"></div>
+    
+    <div class="question-banner">
+        <h3 id="question2">
+            2. How much can I expect to earn in the UK?
+        </h3>
+    </div>
+
+    <!-- Modern Year Selection Dropdown -->
+    <div class="year-dropdown-container">
+        <label for="yearSelection"><strong>Select year :</strong></label>
+        <div class="custom-dropdown">
+            <select id="yearSelection"></select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+
+    <!-- Add buttons for switching between job category, experience level, and job title -->
+    <div class="switch-buttons">
+        <button id="jobCategoryBtn" class="active">Job Category</button>
+        <button id="experienceLevelBtn">Experience Level</button>
+        <button id="jobTitleBtn">Job Title</button>
+    </div>
+
+    <!-- Canvas for Chart -->
+    <canvas id="DataJobChart" width="1200" height="600"></canvas>
+
+    <!-- Question banner 3 -->
+    <div class="question-banner">
+        <h3 id="question3">
+            3. What companies in the UK hire more entry-level employees?
+        </h3>
+    </div>
+
+    <div class="year-dropdown-container">
+        <label for="yearSelect"><strong>Select year:</strong></label>
+        <div class="custom-dropdown">
+            <select id="yearSelect">
+                <option value="all">All Years</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+    
+    <!-- Buttons for Company Size and Work Setting -->
+    <div class="switch-buttons">
+        <button id="companySizeBtn">UK Company Size-Entry Level</button>
+        <button id="workSettingBtn">UK Work Setting-Entry Level</button>
+    </div>
+        
+    <!-- Canvas for Pie Chart -->
+    <canvas id="pieChart" width="1200"0 height="600"></canvas>
+
+    <!-- Question banner 4 -->
+    <div class="question-banner">
+        <h3 id="question4">
+            4. What trends can we observe over the past years?
+        </h3>
+    </div>
+
+    <!-- Switch buttons for selecting chart type -->
+    <div>
+        <input type="radio" name="chartType" value="salaryTrendChart" checked>
+        <label for="salaryTrendChart">Salary Trend</label>
+
+        <input type="radio" name="chartType" value="workSettingTrendChart">
+        <label for="workSettingTrendChart">Work Setting Trend</label>
+
+        <input type="radio" name="chartType" value="jobCountTrendChart">
+        <label for="jobCountTrendChart">Job Count Trend</label>
+    </div>
+
+    <div id="chartsContainer">
+        <canvas id="salaryTrendChart" class="chart"></canvas>
+        <canvas id="workSettingTrendChart" class="chart" style="display:none;"></canvas>
+        <canvas id="jobCountTrendChart" class="chart" style="display:none;"></canvas>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DataInsight Lab</p>
+    </footer>
+</body>
+
+</html>
