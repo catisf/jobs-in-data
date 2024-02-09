@@ -23,16 +23,8 @@ This quote from a [UK Parliament post from 2023](https://researchbriefings.files
 
 We created an interactive web application that visualizes global job market trends based on a dataset of data-related job postings. The application will utilize data on job titles, categories, salaries, and company locations to provide insightful visualizations for users. The project will employ web technologies such as Python Flask for the backend, HTML/CSS for the frontend, and JavaScript for interactive data visualization.
 
-<<<<<<< HEAD
-## 2. Deployment
-This project is deployed on GitHub pages [here](link_to_git_hub_pages)
-
-## 3. Project development stages
-- We used the Kaggle API to fetch the data from an existing [dataset](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
-=======
 ## 2. Project development stages
-- We used the kaggle API to fetch the data from an existing [dataset](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
->>>>>>> main
+- We used the Kaggle API to fetch the data from an existing [dataset](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
 - Using jupyter notebook, we then cleaned the data and rearranged the columns
 - Created an Entity Relationship Diagram (ERD) and stored the data in a PostgreSQL database
 - We also used SQLite to create a database to serve an API
@@ -48,19 +40,11 @@ This project is deployed on GitHub pages [here](link_to_git_hub_pages)
 1. Clone the repository to your local computer. In your Terminal, type `git clone https://github.com/catisf/jobs-in-data.git`
 2. In the Terminal, navigate to the relevant folder and type `python app.py`
 
-<<<<<<< HEAD
-## 5. Ethical considerations
+## 4. Ethical considerations
 We used a publicly available dataset. The dataset contains no personal information or information that could cause any harm to individuals. The source has been duly credited. Our visualisations are original. The code used for the project is publicly available on this repository, promoting transparency in our data handling. 
 
-## 6. Data source
-Data was sourced from the following dataset on Kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
-=======
-## 4. Ethical considerations
-We used a publicly available dataset. The dataset contains no personal information or information that could cause any harm to individuals. The source has been dully credited. Our visualisations are original. The code used for the project is publicly available on this repository, promoting transparency in our data handling. 
-
 ## 5. Data source
-Data was sourced from the following dataset on kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
->>>>>>> main
+Data was sourced from the following dataset on Kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
 
 ## 6. Code source
 Parts of our code were adapted from the documentation of the libraries used, such as:
