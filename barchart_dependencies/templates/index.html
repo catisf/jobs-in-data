@@ -7,11 +7,6 @@
     <title>Data Analyst Jobs Dashboard</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<<<<<<< HEAD
-=======
-    <script src="/static/js/logic.js"></script>
-    <script src="/static/js/piechart_logic.js"></script>
->>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
     <!-- D3 JavaScript -->
@@ -27,8 +22,8 @@
     <!-- js code -->
     <script src="/static/js/barchart_logic.js"></script>
     <script src="/static/js/map_logic.js"></script>
-    <!--<script src="/static/js/piechart_logic.js"></script>
-    <script src="/static/js/linechart_logic.js"></script>-->
+    <script src="/static/js/piechart_logic.js"></script>
+    <!--<script src="/static/js/linechart_logic.js"></script>-->
 </head>
 
 <body>
@@ -76,14 +71,13 @@
     <!-- Canvas for Chart -->
     <canvas id="DataJobChart" width="1200" height="600"></canvas>
 
-<<<<<<< HEAD
+    <!-- Question banner 3 -->
     <div class="question-banner">
         <h3 id="question3">
             3. What companies in the UK hire more entry-level employees?
         </h3>
     </div>
 
-=======
     <div class="year-dropdown-container">
         <label for="yearSelect"><strong>Select year:</strong></label>
         <div class="custom-dropdown">
@@ -98,18 +92,23 @@
         </div>
     </div>
     
-       <!-- Buttons for Company Size and Work Setting -->
-       <div class="switch-buttons">
+    <!-- Buttons for Company Size and Work Setting -->
+    <div class="switch-buttons">
         <button id="companySizeBtn">UK Company Size-Entry Level</button>
         <button id="workSettingBtn">UK Work Setting-Entry Level</button>
     </div>
-    
+        
+    <!-- Canvas for Pie Chart -->
+    <canvas id="pieChart" width="1200"0 height="600"></canvas>
+
+    <!-- Question banner 4 -->
+    <div class="question-banner">
+        <h3 id="question4">
+            4. What trends can we observe over the past years?
+        </h3>
     </div>
     
-        <!-- Canvas for Pie Chart -->
-        <canvas id="pieChart" width="1200"0 height="600"></canvas>
-    
->>>>>>> main
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 DataInsight Lab</p>
