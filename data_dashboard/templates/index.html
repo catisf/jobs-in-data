@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analyst Jobs Dashboard</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
@@ -23,7 +24,7 @@
     <script src="/static/js/barchart_logic.js"></script>
     <script src="/static/js/map_logic.js"></script>
     <script src="/static/js/piechart_logic.js"></script>
-    <!--<script src="/static/js/linechart_logic.js"></script>-->
+    <script src="/static/js/linechart_logic.js"></script>
 </head>
 
 <body>
@@ -106,6 +107,24 @@
         <h3 id="question4">
             4. What trends can we observe over the past years?
         </h3>
+    </div>
+
+    <!-- Switch buttons for selecting chart type -->
+    <div>
+        <input type="radio" name="chartType" value="salaryTrendChart" checked>
+        <label for="salaryTrendChart">Salary Trend</label>
+
+        <input type="radio" name="chartType" value="workSettingTrendChart">
+        <label for="workSettingTrendChart">Work Setting Trend</label>
+
+        <input type="radio" name="chartType" value="jobCountTrendChart">
+        <label for="jobCountTrendChart">Job Count Trend</label>
+    </div>
+
+    <div id="chartsContainer">
+        <canvas id="salaryTrendChart" class="chart"></canvas>
+        <canvas id="workSettingTrendChart" class="chart" style="display:none;"></canvas>
+        <canvas id="jobCountTrendChart" class="chart" style="display:none;"></canvas>
     </div>
     
 
