@@ -4,7 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #fffdfd;
 }
 
 header {
@@ -12,6 +12,31 @@ header {
     background-color: #3498db;
     color: #fff;
     padding: 10px;
+}
+
+.first-question-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;    
+}
+
+.question-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;    
+}
+
+.map-container {
+    width: 1250px;
+    height: 800px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
 }
 
 canvas {
