@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Jobs Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="../static/linechart_logic.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Data Analyst Jobs Dashboard</h1>
+    </header>
+
+<!-- Switch buttons for selecting chart type -->
+<div>
+    <input type="radio" name="chartType" value="salaryTrendChart" checked>
+    <label for="salaryTrendChart">Salary Trend</label>
+
+    <input type="radio" name="chartType" value="workSettingTrendChart">
+    <label for="workSettingTrendChart">Work Setting Trend</label>
+
+    <input type="radio" name="chartType" value="jobCountTrendChart">
+    <label for="jobCountTrendChart">Job Count Trend</label>
+</div>
+
+<div id="chartsContainer">
+    <canvas id="salaryTrendChart" class="chart"></canvas>
+    <canvas id="workSettingTrendChart" class="chart" style="display:none;"></canvas>
+    <canvas id="jobCountTrendChart" class="chart" style="display:none;"></canvas>
+</div>
+
+</body>
+
+</html>
