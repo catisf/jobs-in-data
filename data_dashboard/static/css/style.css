@@ -22,15 +22,6 @@ header {
     margin-bottom: 20px;    
 }
 
-.question-banner {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 20px;    
-}
-
 .map-container {
     width: 1250px;
     height: 800px;
@@ -39,13 +30,13 @@ header {
     padding: 0;
 }
 
-canvas {
-    margin: 20px auto;
-    display: block;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    height: 40%;
+.question-banner {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;    
 }
 
 .year-dropdown-container {
@@ -127,15 +118,6 @@ span.arrow {
     color: white;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 .switch-buttons {
     display: flex;
     justify-content: center;
@@ -163,12 +145,6 @@ footer {
     color: white;
 }
 
-
-.chart-container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
 
 .year-dropdown-container {
     display: flex;
@@ -250,13 +226,14 @@ span.arrow {
     color: white;
 }
 
-
-.chart-container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+canvas {
+    margin: 20px auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 40%;
 }
-
 
 #pieChart {
     margin: 20px auto;
@@ -264,7 +241,17 @@ span.arrow {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: auto;
-    max-width: 600px; 
+    height: 400px;
+    max-width: 800px; 
     
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
