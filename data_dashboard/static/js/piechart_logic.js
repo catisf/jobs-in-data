@@ -74,9 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         text: 'UK Data Analyst Jobs-Entry Level Distrubition',
                         font: {
                             size: 18
+                        },
+                        tooltip: { 
+                            bodyFont: {
+                                size: 18, 
+                            },
+                            titleFont: {
+                                size: 20, 
+                            }
                         }
                     }
                 }
+
             }
         });
     }    
