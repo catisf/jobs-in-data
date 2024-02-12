@@ -2,13 +2,9 @@
 let mapData;
 
 anychart.onDocumentReady(function () {
-    // load the data
+    // Load the data
     anychart.data.loadJsonFile("/print_sample_data_all", function (data) {
         mapData = JSON.parse(data.cleaned_data_all);
-
-        //console.log(mapData)
-
-        // Define an empty array to store the job counts for each country
 
         d3.json("./static/js/countries.geojson").then(function(geojson) {
             let geoData = geojson.features;
@@ -40,7 +36,6 @@ anychart.onDocumentReady(function () {
             let avgGBP = {};
 
             Object.keys(numJobs).forEach(function(country) {
-            console.log(country)
             
             // calculate average salary in each country
             avgUSD[country] = salariesUSD[country] / numJobs[country];
@@ -55,6 +50,14 @@ anychart.onDocumentReady(function () {
             countryData.push({ id: countryID, value: numJobs[country], name: country,
             salaryUSD: avgUSD[country], salaryGBP: avgGBP[country] });
             });       
+
+            // Change US name so that it can be matched with anychart.maps.world and display the correct data on the tooltip
+            for (let i = 0; i < countryData.length; i++) {
+                if (countryData[i].name === "United States of America") { 
+                    countryData[i].name = "United States"; 
+                    break;
+                }
+            };
 
             // Connect the data with the map
             var chart = anychart.map(countryData);
