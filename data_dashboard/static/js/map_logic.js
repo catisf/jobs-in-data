@@ -40,6 +40,7 @@ anychart.onDocumentReady(function () {
             let avgGBP = {};
 
             Object.keys(numJobs).forEach(function(country) {
+            console.log(country)
             
             // calculate average salary in each country
             avgUSD[country] = salariesUSD[country] / numJobs[country];
