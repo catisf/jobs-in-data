@@ -44,7 +44,8 @@ We created an interactive web application that visualizes global job market tren
 We used a publicly available dataset. The dataset contains no personal information or information that could cause any harm to individuals. The source has been duly credited. Our visualisations are original. The code used for the project is publicly available on this repository, promoting transparency in our data handling. 
 
 ## 5. Data source:
-Data was sourced from the following dataset on Kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
+- Job data was sourced from the following dataset on Kaggle: https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data
+- Data on country borders (geojson file) from: https://github.com/datasets/geo-countries/tree/master
 
 ## 6. Code source:
 Parts of our code were adapted from the documentation of the libraries used, such as:
